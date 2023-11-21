@@ -4,6 +4,8 @@ Integrating useful resources into one repository for large models pruning papers
 
 Please feel free to [pull requests](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/pulls) or [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to add papers.
 
+[128:fire:] Keep updating...
+
 ## Table of Contents
 
 - [Tags of Pruning](#tags-of-pruning)
@@ -15,6 +17,8 @@ Please feel free to [pull requests](https://github.com/liyunqianggyn/LLMs-Prunin
 [//]: # (- [2022 Venues]&#40;#2022&#41;)
 
 ### Tags of Pruning
+
+Click on the badge, such as [![Budget](https://img.shields.io/badge/Data-green)](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/data.md), will direct you to the corresponding explanation file.
 
 | [![Type](https://img.shields.io/badge/Type-blue)](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/types.md) | [![Criteria](https://img.shields.io/badge/Criteria-C2A4A6)](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/criteria.md) | [![Budget](https://img.shields.io/badge/Budget-brown)](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/budget.md) | [![Budget](https://img.shields.io/badge/Data-green)](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/data.md) | [![Type](https://img.shields.io/badge/Retrain-orange)](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/finetune.md) | [![Type](https://img.shields.io/badge/Weight-yellow)](concepts/weight_update.md) |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------:|
