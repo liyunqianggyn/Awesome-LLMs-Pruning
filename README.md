@@ -12,7 +12,7 @@ Please feel free to [pull requests](https://github.com/liyunqianggyn/LLMs-Prunin
 
 - [2023 Venues](#2023)
 
-- [2022 Venues](#2022)
+[//]: # (- [2022 Venues]&#40;#2022&#41;)
 
 ### Tags of Pruning
 
@@ -52,8 +52,9 @@ Please feel free to [pull requests](https://github.com/liyunqianggyn/LLMs-Prunin
 [//]: # (| [![Star]&#40;https://img.shields.io/github/stars/horseee/LLM-Pruner.svg?style=social&label=Star&#41;]&#40;https://github.com/horseee/LLM-Pruner&#41; [![Publish]&#40;https://img.shields.io/badge/Conference-NeurIPS'23-blue&#41;]&#40;&#41; <br> [Pruning Meets Low-Rank Parameter-Efficient Fine-Tuning]&#40;https://arxiv.org/abs/2305.18403&#41; <br>  First discover all coupled structures following [*Depgraph*]&#40;https://arxiv.org/abs/2301.12900&#41;, then estimate [*LoRA*]&#40;https://arxiv.org/abs/2106.09685&#41;.                                                                                                                                            | [![Type]&#40;https://img.shields.io/badge/Type-Structured-blue&#41;]&#40;https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/types.md&#41;  <br> [![Type]&#40;https://img.shields.io/badge/Criteria-Hessian-C2A4A6&#41;]&#40;https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/criteria.md&#41; <br> [![Type]&#40;https://img.shields.io/badge/Budget-Sparsity_rate-brown&#41;]&#40;https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/budget.md&#41; <br> [![Type]&#40;https://img.shields.io/badge/Data-Small--50K-green&#41;]&#40;https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/data.md&#41;   <br> [![Type]&#40;https://img.shields.io/badge/Retrain-Efficient--LoRA-orange&#41;]&#40;https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/finetune.md&#41; |                       -                                                                           [OpenReview]&#40;https://openreview.net/forum?id=9KVT1e1qf7&#41;                       |  [PyTorch]&#40;https://github.com/horseee/LLM-Pruner&#41;  |)
 
 
-### 2022
-Parameter-Efficient Sparsity for Large Language Models Fine-Tuning, IJCAI
+[//]: # (### 2022)
+
+[//]: # (Parameter-Efficient Sparsity for Large Language Models Fine-Tuning, IJCAI)
 
 
 ## Related Repotories
