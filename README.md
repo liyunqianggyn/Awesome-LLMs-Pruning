@@ -4,7 +4,7 @@ Integrating useful resources into one repository for large models pruning papers
 
 Please feel free to [pull requests](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/pulls) or [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to add papers.
 
-[128:fire:] Keep updating...
+[:fire:] Keep updating...
 
 ## Table of Contents
 
