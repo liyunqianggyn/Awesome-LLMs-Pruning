@@ -1,10 +1,11 @@
-# Awesome LLMs Pruning All In One [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome LLMs Pruning All-In-One [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Integrating useful resources into one repository for large models pruning papers, including one sentence take-away summary, explanation notes such as blogs or videos,  tags, source code links and venue.
+Integrating useful resources into one repository for large models pruning papers, including one sentence take-away summary, explanation notes such as paper's challenges,  blogs or videos, paper tags, source code links and venue.
 
 Please feel free to [pull requests](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/pulls) or [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to add papers.
 
-:fire: Keep updating...
+:fire: Keep updating... 
+Please star it if you find it helpful:)
 
 ## Table of Contents
 
@@ -18,7 +19,7 @@ Please feel free to [pull requests](https://github.com/liyunqianggyn/LLMs-Prunin
 
 ### Tags of Pruning
 
-We refer to recent accepted ICCV paper [_differentiable transportation pruning_](https://arxiv.org/abs/2307.08483)   for summarizing these tags.
+We refer to our recent accepted ICCV paper [_differentiable transportation pruning_](https://arxiv.org/abs/2307.08483)   for summarizing these tags.
 Click on the badge, such as [![Budget](https://img.shields.io/badge/Data-green)](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/blob/main/concepts/data.md), will direct you to the corresponding explanation file. 
 
 
