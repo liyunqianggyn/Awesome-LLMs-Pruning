@@ -1,6 +1,5 @@
 ## Challenges or Personal Insights
 
-
 ### General Challenges in LLMs
 - Extensive number of _parameters_ (billions to trillions) in foundation models poses _**computational**_ and
 _**memory**_ challenges for training.
@@ -37,6 +36,9 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 - In high sparsity level (>60%), it suffers from significant performance drops
 - The pruning criteria [_RIA_](concepts/criteria.md) is more heuristic
 
+#### Compresso-2024
+- Retraining on small instruction-tuned [Alpaca](https://github.com/gururise/AlpacaDataCleaned) with LoRA, may make _model collapse_ to some specific tasks, while performs bad on other tasks. See [LLM-Pruner](#llm-pruner-nips-2023). 
+- Learning sparsity masks with $L_0$ regularization and differentiable re-parameterization  involves many hyper-parameters, hard to use
 
 
 ####  SparseGPT-ICML-2023
@@ -51,6 +53,7 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 
 - One-shot prune +  fine-tuning strategy  lose chances to explore other possible sub-networks.
 
+[//]: # (The capacity of pruned subnetwork by one-shot pruning criteria is the upper bound, no matter how well your fine-tuning strategy is.)
 
 #### Emergence-of-Essential-Sparsity-NIPS-2023
 - No much benefit on pruning modern LLMs such as Llama2 where performance drops significantly.
