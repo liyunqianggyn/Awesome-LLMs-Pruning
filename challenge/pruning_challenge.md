@@ -40,10 +40,6 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 - Retraining on small instruction-tuned [Alpaca](https://github.com/gururise/AlpacaDataCleaned) with LoRA, may make _model collapse_ to some specific tasks, while performs bad on other tasks. See [LLM-Pruner](#llm-pruner-nips-2023). 
 - Learning sparsity masks with $L_0$ regularization and differentiable re-parameterization  involves many hyper-parameters, hard to use
 
-#### Scaling-laws-sparse-2024
-- Would be interesting to see how the scaling law works with efficient-retraining techniques like LoRA 
-
-
 
 ####  SparseGPT-ICML-2023
 - In high sparsity level (>60%), it suffers from significant performance drops
