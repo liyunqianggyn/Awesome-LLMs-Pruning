@@ -43,7 +43,9 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 #### Scaling-laws-sparse-2024
 - Would be interesting to see how the scaling law works with efficient-retraining techniques like LoRA 
 
-
+#### The-LLM-Surgeon-ICLR-2024
+- The performance gain is marginal, but the compression runtime is significantly higher (e.g. multi-shot) compared to baseline methods like sparseGPT.
+- Investigating high sparsity ratios remains an area of exploration (>60%), which may suffer from significant performance drops
 
 ####  SparseGPT-ICML-2023
 - In high sparsity level (>60%), it suffers from significant performance drops
