@@ -16,7 +16,6 @@ Please star it if you find it helpful:)
 
 - [2023 Venues](#2023)
 
-[//]: # (- [2022 Venues]&#40;#2022&#41;)
 
 ### Tags of Pruning
 
