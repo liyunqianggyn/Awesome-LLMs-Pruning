@@ -12,6 +12,9 @@ _**memory**_ challenges for training.
 In this section, I summarize the limitations for recent LLMs pruning papers to my best understanding. 
 If there is any misunderstanding, please [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to let me know:) 
 
+#### 1-Bit-LLMs-Approach-2024
+- Training from scratch is needed when the weight is quantized to extremely 1-bit.
+- Activation may not be easily quantized to 1-bit, which may lead to performance drops.
 
 #### Wanda-Simple-Effective-Pruning-Approach-2024
 - In high sparsity level (>60%), it suffers from significant performance drops
