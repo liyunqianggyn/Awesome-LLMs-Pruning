@@ -13,7 +13,8 @@ In this section, I summarize the limitations for recent LLMs pruning papers to m
 If there is any misunderstanding, please [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to let me know:) 
 
 #### Keyformer-attention-sparsification-2024
-- Based on the attention-score: 
+- The Gumbel softmax-based score function sounds like a highly heuristic solution, and introduce several hard-tuned hyperparameters.
+- Balance the sliding window size w and the key tokens number k may involve expensive hyperparameter tuning.
 
 
 #### Wanda-Simple-Effective-Pruning-Approach-2024
@@ -53,7 +54,7 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 - The performance gain is marginal, but the compression runtime is significantly higher (e.g. multi-shot) compared to baseline methods like sparseGPT.
 - Investigating high sparsity ratios remains an area of exploration (>60%), which may suffer from significant performance drops
 
-#### H20-nips-2023
+#### H2o-nips-2023
 - The bias of accumulated attention scores that favoring initial tokens due to cumulative effects may be suboptimal.
 - Solely based on accumulated attention scores,  in the subsequent decoding steps the discarded tokens' information is inaccessible for later identifying key tokens.
 ####  SparseGPT-ICML-2023
