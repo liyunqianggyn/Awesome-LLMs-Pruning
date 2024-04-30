@@ -12,13 +12,16 @@ _**memory**_ challenges for training.
 In this section, I summarize the limitations for recent LLMs pruning papers to my best understanding. 
 If there is any misunderstanding, please [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to let me know:) 
 
-#### 1-Bit-LLMs-Approach-2024
-- Training from scratch is needed which is expensive.
-- Activation may not be easily quantized to 1-bit, which may lead to performance drops.
+#### Keyformer-attention-sparsification-2024
+- Based on the attention-score: 
+
 
 #### Wanda-Simple-Effective-Pruning-Approach-2024
 - In high sparsity level (>60%), it suffers from significant performance drops
 
+#### 1-Bit-LLMs-Approach-2024
+- Training from scratch is needed which is expensive.
+- Activation may not be easily quantized to 1-bit, which may lead to performance drops.
 
 
 #### BESA-Blockwise-Parameter-Efficient-Sparsity-Allocation-2024
@@ -50,6 +53,9 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 - The performance gain is marginal, but the compression runtime is significantly higher (e.g. multi-shot) compared to baseline methods like sparseGPT.
 - Investigating high sparsity ratios remains an area of exploration (>60%), which may suffer from significant performance drops
 
+#### H20-nips-2023
+- The bias of accumulated attention scores that favoring initial tokens due to cumulative effects may be suboptimal.
+- Solely based on accumulated attention scores,  in the subsequent decoding steps the discarded tokens' information is inaccessible for later identifying key tokens.
 ####  SparseGPT-ICML-2023
 - In high sparsity level (>60%), it suffers from significant performance drops
 - No retraining, but demands computationally intensive weight update process
