@@ -14,7 +14,7 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 
 #### Keyformer-attention-sparsification-2024
 - The Gumbel softmax-based score function sounds like a highly heuristic solution, and introduce several hard-tuned hyperparameters.
-- Balance the sliding window size w and the key tokens number k may involve expensive hyperparameter tuning.
+- Balance the sliding window size w and the key tokens number k is important.
 
 
 #### Wanda-Simple-Effective-Pruning-Approach-2024
