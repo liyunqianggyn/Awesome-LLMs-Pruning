@@ -54,6 +54,10 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 - The performance gain is marginal, but the compression runtime is significantly higher (e.g. multi-shot) compared to baseline methods like sparseGPT.
 - Investigating high sparsity ratios remains an area of exploration (>60%), which may suffer from significant performance drops
 
+#### KPrune-ICLR-2024
+- KPrune is restricted to small encoder-only model, interesting to see how it works when applied on modern scaled decoder-based LLMs.
+
+
 #### H2o-nips-2023
 - The bias of accumulated attention scores that favoring initial tokens due to cumulative effects may be suboptimal.
 - Solely based on accumulated attention scores,  in the subsequent decoding steps the discarded tokens' information is inaccessible for later identifying key tokens.
