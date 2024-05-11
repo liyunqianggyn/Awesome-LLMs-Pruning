@@ -7,8 +7,9 @@ _**memory**_ challenges for training.
 - Fine-tuning LLMs on task-specific datasets may make the model _**overfit**_ to task-specific data, and _**collapse**_ to specific domain while lose ability for other domains.
 
 
-### Pruning Papers' Challenges
+### Pruning Paper Challenges
 
+- ### 2024
 In this section, I summarize the limitations for recent LLMs pruning papers to my best understanding. 
 If there is any misunderstanding, please [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to let me know:) 
 
@@ -54,10 +55,13 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 - The performance gain is marginal, but the compression runtime is significantly higher (e.g. multi-shot) compared to baseline methods like sparseGPT.
 - Investigating high sparsity ratios remains an area of exploration (>60%), which may suffer from significant performance drops
 
+#### DSOT-ICLR-2024
+- The reduction of **_proxy_**  reconstruction error may not linearly correlate with the reduction of perplexity 
+- Interesting to see Wanda+LoRA VS. DSOT+LoRA in challenging high sparsity ratios (80%)
 #### KPrune-ICLR-2024
 - KPrune is restricted to small encoder-only model, interesting to see how it works when applied on modern scaled decoder-based LLMs.
 
-
+- ### 2023
 #### H2o-nips-2023
 - The bias of accumulated attention scores that favoring initial tokens due to cumulative effects may be suboptimal.
 - Solely based on accumulated attention scores,  in the subsequent decoding steps the discarded tokens' information is inaccessible for later identifying key tokens.
