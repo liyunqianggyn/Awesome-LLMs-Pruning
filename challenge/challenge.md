@@ -61,6 +61,9 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 #### KPrune-ICLR-2024
 - KPrune is restricted to small encoder-only model, interesting to see how it works when applied on modern scaled decoder-based LLMs.
 
+#### ShortenedLLMs-ICLRw-2024
+- More zero-shot results on various tasks will be interesting to show its zero-shot capabilities
+
 - ### 2023
 #### H2o-nips-2023
 - The bias of accumulated attention scores that favoring initial tokens due to cumulative effects may be suboptimal.
