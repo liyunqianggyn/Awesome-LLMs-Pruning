@@ -13,6 +13,9 @@ _**memory**_ challenges for training.
 In this section, I summarize the limitations for recent LLMs pruning papers to my best understanding. 
 If there is any misunderstanding, please [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to let me know:) 
 
+#### Prune-Distill-Llama-31-2024
+- Interesting to see the combination between parameter-efficient fine-tuning techniques such as LoRA (less training parameters) together with less training tokens for retraining
+
 #### Keyformer-attention-sparsification-2024
 - The Gumbel softmax-based score function sounds like a highly heuristic solution, and introduce several hard-tuned hyperparameters.
 - Balance the sliding window size w and the key tokens number k is important.
