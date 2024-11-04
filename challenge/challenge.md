@@ -9,12 +9,18 @@ _**memory**_ challenges for training.
 
 ### Pruning Paper Challenges
 
-- ### 2024
+
 In this section, I summarize the limitations for recent LLMs pruning papers to my best understanding. 
 If there is any misunderstanding, please [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to let me know:) 
 
+- ### 2025
+#### Prune-Unreasonable-Ineffectivenes-DeepLayer-2025
+- Current layer pruning methods can not support pruning non-continuous layers, which may be very coarse-grained.
+
+- ### 2024
 #### Prune-Distill-Llama-31-2024
 - Interesting to see the combination between parameter-efficient fine-tuning techniques such as LoRA (less training parameters) together with less training tokens for retraining
+- The target budget is limited to parameter counts, interesting to see the performance on budgets like latency
 
 #### Keyformer-attention-sparsification-2024
 - The Gumbel softmax-based score function sounds like a highly heuristic solution, and introduce several hard-tuned hyperparameters.
