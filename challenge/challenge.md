@@ -17,7 +17,7 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 #### Prune-Unreasonable-Ineffectivenes-DeepLayer-2025
 - Current layer pruning methods can not support pruning non-continuous layers, which may be very coarse-grained.
 
-### Short-gpt-2025
+#### Short-GPT-2025
 - The prunable unit is transformer block, can not prune more fine-grained units like layers.
 
 

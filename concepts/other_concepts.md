@@ -11,6 +11,6 @@ Recent paper [Quantizable Transformer](https://arxiv.org/abs/2306.12929) finds t
 Increasing
 model size or data brings _consistent_ performance improvements, even at very large scale. And this scaling behavior can be predictable by simple [power-law](https://arxiv.org/abs/2001.08361) curves. 
 
-### Layer/depth pruning
+### Layer or Depth pruning
 Layer pruning is a technique to remove entire layers from the model. It is a coarse-grained pruning method, which may be very effective in some cases.
 In contrast, depth pruning is a fine-grained pruning method, which removes channels or neurons from each layer.
