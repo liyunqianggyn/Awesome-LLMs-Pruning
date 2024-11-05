@@ -17,8 +17,9 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 #### Prune-Unreasonable-Ineffectivenes-DeepLayer-2025
 - Current layer pruning methods can not support pruning non-continuous layers, which may be very coarse-grained.
 
-####  Shortened-LLaMA-2025
+### Short-gpt-2025
 - The prunable unit is transformer block, can not prune more fine-grained units like layers.
+
 
 ### 2024
 #### Prune-Distill-Llama-31-2024
@@ -74,6 +75,7 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 - KPrune is restricted to small encoder-only model, interesting to see how it works when applied on modern scaled decoder-based LLMs.
 
 #### ShortenedLLMs-ICLRw-2024
+- The prunable unit is transformer block, can not prune more fine-grained units like layers.
 - More zero-shot results on various tasks will be interesting to show its zero-shot capabilities
 
 ### 2023
