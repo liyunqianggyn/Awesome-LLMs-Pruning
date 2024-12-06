@@ -20,6 +20,8 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 #### Short-GPT-2025
 - The prunable unit is transformer block, can not prune more fine-grained units like layers.
 
+#### LLM-Streamline-2025
+- Not all LLMs have contiguous less important layers, thus removing certain contiguous layers may be suboptimal.
 
 ### 2024
 #### Prune-Distill-Llama-31-2024
