@@ -13,4 +13,10 @@ model size or data brings _consistent_ performance improvements, even at very la
 
 ### Layer or Depth pruning
 Layer pruning is a technique to remove entire layers from the model. It is a coarse-grained pruning method, which may be very effective in some cases.
+
+- Dimensional Mismatch Problem:  When pruning intermediate layers, the input and output dimensions of subsequent layers may no longer match. 
+- Current LLMs Layer Pruning: Transformer blocks have the exactly same dimension of input  and output due to the residual connection. Thus, layer pruning is feasible for LLMs.
+ Did not suit for situation when mismatch between new input and old input, such as VGG layer pruning.
+<div align="left"><figcaption>Figure 1. Depth Pruning Status for Different Models</figcaption><img src='./figs/Status_Layer_Pruning.png' width=1050 alt=''> </img></div> 
+
 In contrast, width pruning is a fine-grained pruning method, which removes channels or neurons from each layer.
