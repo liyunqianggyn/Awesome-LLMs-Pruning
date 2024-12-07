@@ -17,6 +17,6 @@ Layer pruning is a technique to remove entire layers from the model. It is a coa
 - Dimensional Mismatch Problem:  When pruning intermediate layers, the input and output dimensions of subsequent layers may no longer match. 
 - Current LLMs Layer Pruning: Transformer blocks have the exactly same dimension of input  and output due to the residual connection. Thus, layer pruning is feasible for LLMs.
  Did not suit for situation when mismatch between new input and old input, such as VGG layer pruning.
-<div align="left"><figcaption></figcaption><img src='./figs/Status_Layer_Pruning.png' width=550 alt=''> </img></div> 
+<div align="left"><figcaption></figcaption><img src='./figs/Status_Layer_Pruning.png' width=850 alt=''> </img></div> 
 
 In contrast, width pruning is a fine-grained pruning method, which removes channels or neurons from each layer.

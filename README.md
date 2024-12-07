@@ -12,6 +12,8 @@ Please star it if you find it helpful:)
 
 - [Tags of Pruning](#tags-of-pruning)
 
+- [2025 Venues](#2025)
+
 - [2024 Venues](#2024)
 
 - [2023 Venues](#2023)
