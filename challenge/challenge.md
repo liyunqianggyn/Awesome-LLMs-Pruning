@@ -23,6 +23,9 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 #### LLM-Streamline-2025
 - Not all LLMs have contiguous less important layers, thus removing certain contiguous layers may be suboptimal.
 
+#### Reassessing-Layer-Pruning-2025
+- The selection of calibration and fine-tuning datasets may bias the conclusions of the paper.
+
 ### 2024
 #### Prune-Distill-Llama-31-2024
 - Interesting to see the combination between parameter-efficient fine-tuning techniques such as LoRA (less training parameters) together with less training tokens for retraining
