@@ -26,6 +26,10 @@ If there is any misunderstanding, please [open an issue](https://github.com/liyu
 #### Reassessing-Layer-Pruning-2025
 - The selection of calibration and fine-tuning datasets may bias the conclusions of the paper.
 
+#### Puzzle-Distillation-NAS-2025
+-  The authors mentioned "in this work, we require that all subblocks within a layer have the same input and output dimensions as their parent" refers to the [Dimensional Mismatch Problem](concepts/other_concepts.md/#layer-or-depth-pruning)
+- The blockwise local knowledge distillation requires careful tuning of teacher-student ratios and distillation hyperparameters, making the approach sensitive to hyperparameter selection.
+
 ### 2024
 #### Prune-Distill-Llama-31-2024
 - Interesting to see the combination between parameter-efficient fine-tuning techniques such as LoRA (less training parameters) together with less training tokens for retraining
