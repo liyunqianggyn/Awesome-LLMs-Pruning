@@ -1,9 +1,10 @@
+<div align="center">
+  <img src="concepts/figs/nogeneric.png" alt="Awesome LLMs Pruning Logo" width="200"/>
+</div>
+
 # Awesome LLMs Pruning 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<div align="center">
-  <img src="concepts/figs/nogeneric.png" alt="Awesome LLMs Pruning Logo" width="400"/>
-</div>
 
 Integrating useful resources into one repository for large models pruning papers, including one sentence take-away summary, explanation notes such as paper's challenges,  blogs or videos, paper tags, source code links and venue.
 
