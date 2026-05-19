@@ -11,7 +11,13 @@ _**memory**_ challenges for training.
 
 
 In this section, I summarize the limitations for recent LLMs pruning papers to my best understanding. 
-If there is any misunderstanding, please [open an issue](https://github.com/liyunqianggyn/LLMs-Pruning-All-In-One/issues) to let me know:) 
+If there is any misunderstanding, please [open an issue](https://github.com/liyunqianggyn/Awesome-LLMs-Pruning/issues) to let me know:) 
+
+### 2026
+#### SlimQwen-2026
+- Depth pruning drops the last 25% of layers by a fixed policy, not importance-ranked or non-contiguous layer removal (cf. [layer pruning](../concepts/other_concepts.md#layer-or-depth-pruning)).
+- Recovery relies on ~400B-token continual pretraining with KD/MTP, so the pruning recipe is hard to isolate from massive post-compression compute.
+- One-shot expert criteria converge after large CPT, so merge/prune choice matters mainly before recovery and may not generalize across MoE architectures beyond Qwen3-Next.
 
 ### 2025
 #### Prune-Unreasonable-Ineffectivenes-DeepLayer-2025
