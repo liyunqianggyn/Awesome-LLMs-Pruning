@@ -19,4 +19,15 @@ Layer pruning is a technique to remove entire layers from the model. It is a coa
  Did not suit for situation when mismatch between new input and old input, such as VGG layer pruning.
 <div align="left"><figcaption></figcaption><img src='./figs/Status_Layer_Pruning.png' width=850 alt=''> </img></div> 
 
-In contrast, width pruning is a fine-grained pruning method, which removes channels or neurons from each layer.
+In contrast, width pruning is a fine-grained pruning method, which removes channels or neurons from each layer. 
+
+### Expert merge (MoE pruning)
+
+In a MoE block, each **expert** is a small sub-network (typically a SwiGLU MLP with its own weights). **Expert merge** compresses the MoE by combining several experts into fewer experts, instead of only zeroing or dropping them.
+
+- **Same-shape requirement:** Experts in a layer share the same input/output dimensions, so their weights live in the same tensor shape and can be blended—analogous to how [mergekit](https://github.com/arcee-ai/mergekit) requires compatible checkpoints for `linear` / `slerp`-style merges.
+- **Procedure (typical):** Rank experts on calibration data (e.g. routing frequency, soft router mass, or [REAP](https://arxiv.org/abs/2505.08738)-style activation scores) → keep top experts → merge each discarded expert into a **nearest** kept expert, often with importance-weighted interpolation of MLP weights.
+- **vs. cross-model merging:** Tools like mergekit usually **fuse separate pretrained models** (or build a MoE from dense checkpoints via `mergekit-moe`). MoE **expert merge** in pruning papers (e.g. [SlimQwen](https://arxiv.org/abs/2605.08738)) operates **inside one teacher MoE** to shrink expert count; recovery is usually large-scale continual pretraining + distillation, not a single weight-average step.
+- **Partial-preservation:** Keep half of the target experts **unchanged** and form the rest by merging discarded experts into merge bases—reduces homogenizing all experts through aggressive blending ([SlimQwen](https://arxiv.org/abs/2605.08738)).
+
+Expert **prune** (drop experts entirely) vs **merge** (fold removed experts into survivors): merge often retains more capacity before post-compression training, at the cost of a more complex one-shot step.
